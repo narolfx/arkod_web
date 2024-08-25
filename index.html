@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360° Product View</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar">
+        <div class="nav-logo">ARKOD</div>
+        <div class="nav-year">
+            <a href="#" class="year-item">2024</a>
+            <a href="#" class="year-item">2023</a>
+            <a href="#" class="year-item">2022</a>
+            <a href="#" class="year-item">2021</a>
+            <a href="#" class="year-item">2020</a>
+        </div>
+        <div class="nav-menu">
+            <a href="#" class="nav-item">news</a>
+            <a href="#" class="nav-item">work</a>
+            <a href="#" class="nav-item">office</a>
+        </div>
+    </div>
+
+    <!-- Project Container for Vertical Scrolling -->
+    <div id="project-container">
+        <!-- Project 1 Viewer -->
+        <div class="project">
+            <div class="project-viewer">
+                <div id="viewer-images-1" class="viewer-images"></div>
+                <!-- Centered Hotspot for Project 1 -->
+                <div class="hotspot" data-info=" Project 1: Modern House 
+Location: NewYork   
+Year: 2022  
+Area:350m2 "></div>
+            </div>
+            <!-- Control Buttons -->
+            <div class="controls">
+                <input type="range" class="rotation-slider" min="0" max="60" value="0">
+                <button class="zoom-toggle"><i class="fas fa-search-plus"></i></button>
+            </div>
+        </div>
+
+        <!-- Project 2 Viewer -->
+        <div class="project">
+            <div class="project-viewer">
+                <div id="viewer-images-2" class="viewer-images"></div>
+                <!-- Centered Hotspot for Project 2 -->
+                <div class="hotspot" data-info="Project 2: Urban Loft<br>Location: Los Angeles<br>Year: 2021"></div>
+            </div>
+            <!-- Control Buttons -->
+            <div class="controls">
+                <input type="range" class="rotation-slider" min="0" max="60" value="0">
+                <button class="zoom-toggle"><i class="fas fa-search-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script> <!-- Include custom JavaScript -->
+</body>
+</html>
